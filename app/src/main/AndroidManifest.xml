@@ -18,6 +18,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <data android:scheme="https" android:host="xkcd.com" android:mimeType="text/html" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
         </activity>
     </application>
 
